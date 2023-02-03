@@ -1,0 +1,65 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Verdana'
+  }
+  
+  .container {
+    width: 50%;
+    height: 200px;
+    margin: 50px auto;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 0 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+  }
+
+  ul {
+    margin-bottom: 75px;
+  }
+
+  ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sampleButton {
+    padding: 30px 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+  }
+  
+  .sampleButton:hover {
+    background-color: green;    
+  }
+  
+  .sampleButton:active{
+    box-shadow: none;
+  }
+  
