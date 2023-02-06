@@ -1,3 +1,10 @@
+const data = [
+    "Button 1",
+    "Button 2",
+    "Button 3",
+    "Button 4"
+]
+
 function buttonCreator(buttonText){
     const button = document.createElement('button');
 
@@ -15,9 +22,27 @@ function buttonCreator(buttonText){
 
 let container = document.querySelector('.container')
 
-let firstButton = buttonCreator('This is button 1');
+/* 
+for (let i = 0; i < data.length; i++) {
+    let button = buttonCreator(data[i]);
+    container.appendChild(button);
+};
+ */
 
-let secondButton = buttonCreator('This is button 2');
+/* 
+data.forEach((arrayItem) => {
+    let newButton = buttonCreator(arrayItem);  
+    container.appendChild(newButton);
+});
+ */
 
-container.appendChild(firstButton);
-container.appendChild(secondButton);
+let newComponents = data.map((arrayItem) => {
+    let newButton = buttonCreator(arrayItem);
+  
+    // Remember, we always need to return something when we use .map
+    return newButton;
+});
+
+newComponents.forEach(component => {
+    container.appendChild(component);
+});
